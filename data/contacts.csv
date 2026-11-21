@@ -1,0 +1,8 @@
+id,partner_id,name,title,relationship_owner,relationship_strength,last_contact,mutual_connection,next_step
+C-01,P-01,Maya Cole,Principal,Origination team,4,2026-11-18,Introduced via demo infrastructure conference,Share thematic overview
+C-02,P-02,James Venn,Investment Director,Origination team,5,2026-11-12,Existing demo logistics industry relationship,Set joint strategy meeting
+C-03,P-03,Imani Bell,Partner,Origination team,3,2026-10-27,Introduced through demo energy adviser,Arrange introductory call
+C-04,P-04,Tom Avery,Investment Lead,Origination team,2,2026-09-09,No existing pathway,Research preferred partnership approach
+C-05,P-05,Nora Fisher,Director,Origination team,2,2026-09-28,No existing pathway,Identify relevant sector introduction
+C-06,P-06,Eleanor Marsh,Investment Principal,Origination team,4,2026-11-05,Existing demo founder network,Discuss appetite and capacity
+C-07,P-07,Sofia Price,Managing Director,Origination team,3,2026-11-16,Introduced via demo operating partner,Share relevant platform thesis
