@@ -1,0 +1,10 @@
+id,opportunity_id,workstream,owner,audience,status,due,deliverable,notes
+M-01,O-101,Thesis qualification,Origination lead,Internal,Complete,2026-11-19,Investment hypothesis,Demo screening only
+M-02,O-101,Initial capital discussion,Relationship lead,Partner-shareable,In progress,2026-11-30,Indicative partnership objectives,Not an actual partner contact
+M-03,O-101,Asset diligence,Investment team,Internal,Not started,2026-12-08,Rent roll and capex review,Sensitive diligence should never be in external preview
+M-04,O-101,Initial materials exchange,Relationship lead,Partner-shareable,Not started,2026-12-12,Approved high-level summary,Requires real world disclosure consent before sharing
+M-05,O-102,Operating team meeting,Origination lead,Partner-shareable,In progress,2026-12-02,Management introductions,All persons and relationships fictional
+M-06,O-102,Regulatory review,Investment team,Internal,Not started,2026-12-15,Heat networks compliance memo,Internal-only review
+M-07,O-104,Refurbishment scope,Investment team,Internal,In progress,2026-12-08,Initial carbon and capex sensitivity,Assumption validation outstanding
+M-08,O-108,Founder discussion,Relationship lead,Partner-shareable,Not started,2026-12-05,High-level plan and mutual objectives,No live counterparties
+M-09,O-108,Internal underwriting,Investment team,Internal,Not started,2026-12-16,Asset backing and downside diligence,Internal-only diligence

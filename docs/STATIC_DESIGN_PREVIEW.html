@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root { --mint:#b5e0c5; --bright:#d5f8dd; --bg:#0b1618; --panel:#132326; --ink:#eff5ef; --muted:#a2b4ad; --gold:#b7a17c; }
+html, body, [class*="css"], [data-testid="stApp"] {font-family:'DM Sans',sans-serif!important;}
+.stApp {background: radial-gradient(ellipse 80% 45% at 83% -10%,#193d3a 0%,transparent 74%),#0b1618;color:var(--ink);}
+.main .block-container {padding-top:1.55rem;padding-bottom:4rem;max-width:1300px;}
+header[data-testid="stHeader"] {background: transparent!important;}
+[data-testid="stSidebar"] {background:#0b1b1e;border-right:1px solid #23393b;}
+[data-testid="stSidebar"] .block-container {padding-top:2rem;}
+[data-testid="stSidebar"] hr {border-color:#30413f;}
+[data-testid="stSidebar"] [role="radiogroup"] label {padding:.36rem .5rem;border-radius:8px;}
+[data-testid="stSidebar"] [role="radiogroup"] label:hover {background:#1a3433;}
+[data-testid="stMetric"] {background:#142528;border:1px solid #28423e;padding:18px 20px;border-radius:14px;min-height:122px;}
+[data-testid="stMetricLabel"] {color:#a9bbb2;font-size:.80rem;}
+[data-testid="stMetricValue"] {color:#e8faed;font-size:2rem;font-weight:700;}
+[data-testid="stMetricDelta"] {font-size:.72rem;}
+[data-testid="stVerticalBlock"] {gap:.75rem;}
+.stButton>button[kind="primary"], .stDownloadButton>button[kind="primary"] {background:#b5e0c5;color:#102321;border:1px solid #b5e0c5;font-weight:700;border-radius:9px;padding:.64rem 1.15rem;}
+.stButton>button[kind="primary"]:hover {background:#d5f8dd;color:#0b1618;border-color:#d5f8dd;}
+.stButton>button[kind="secondary"],.stDownloadButton>button {border:1px solid #46635b;background:#18302f;color:#e3f4e6;border-radius:9px;}
+.stButton>button:hover,.stDownloadButton>button:hover {border-color:#b5e0c5;color:#b5e0c5;}
+[data-testid="stTabs"] button {color:#b1c1bc;}
+[data-testid="stMarkdownContainer"] a {color:#bee9cc;text-decoration-color:#6e9b88;}
+[data-testid="stDataFrame"] {border:1px solid #26443f;border-radius:11px;overflow:hidden;}
+[data-testid="stExpander"] {border:1px solid #29453f;border-radius:10px;}
+[data-testid="stAlert"] {border-radius:10px;}
+h1,h2,h3{font-family:'Manrope','DM Sans',sans-serif!important;letter-spacing:-.035em;}
+h1{font-weight:800!important;} h2{font-weight:700!important;}
+.portal-eyebrow,.eyebrow{color:#a8c9ba;font-size:.73rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase;}
+.portal-wordmark{font-family:Manrope,sans-serif;font-size:1.38rem;letter-spacing:.06em;font-weight:800;line-height:1.5;}
+.portal-wordmark span {color:#b5e0c5;}
+.concept-tag {color:#9bb4ab;font-size:.74rem;letter-spacing:.07em;}
+.portal-hero{margin-top:1.4rem;border:1px solid #35564d;border-radius:23px;position:relative;overflow:hidden;padding:clamp(1.6rem,4vw,4rem);min-height:455px;background:radial-gradient(circle at 77% 33%,rgba(83,154,125,.19),transparent 33%),linear-gradient(122deg,#142826,#0a171a 75%);}
+.portal-hero:after{content:"";pointer-events:none;position:absolute;right:-6%;top:7%;width:44%;height:90%;border:1px solid rgba(181,224,197,.15);transform:skew(-23deg) rotate(-9deg);box-shadow:-30px 20px 0 -2px rgba(174,229,201,.06),-65px 55px 0 -2px rgba(174,229,201,.05),-110px 90px 0 -2px rgba(174,229,201,.04);}
+.portal-hero .hero-title{font-family:Manrope,sans-serif;font-weight:800;font-size:clamp(2.6rem,5.8vw,5.4rem);line-height:1.07;letter-spacing:-.066em;color:#eff5ee;position:relative;max-width:850px;z-index:2;margin:27px 0 23px;}
+.portal-hero em{font-style:normal;color:#b5e0c5;}
+.portal-hero .subhead{font-size:1.12rem;line-height:1.8;max-width:560px;color:#aabeb5;position:relative;z-index:2;}
+.hero-footer{display:flex;gap:22px;flex-wrap:wrap;margin-top:44px;padding-top:22px;border-top:1px solid #2a4540;max-width:700px;position:relative;z-index:2;}
+.hero-footer span{font-size:.73rem;color:#b7c7bd;letter-spacing:.08em;}
+.hero-footer strong{display:block;font-size:.92rem;color:#f0f5ec;letter-spacing:0;margin-top:6px;}
+.main-intro{margin:0 0 20px 0;}
+.main-intro .page-title{font-family:Manrope,sans-serif;font-weight:800;font-size:2.28rem;letter-spacing:-.05em;color:#f3f6f0;margin:8px 0 8px;}
+.main-intro .page-desc{color:#a9bdb1;font-size:.99rem;line-height:1.7;max-width:780px;}
+.glass-card{min-height:140px;border:1px solid #28443d;background:linear-gradient(135deg,#172c2b,#102021);border-radius:14px;padding:23px 23px;margin-bottom:9px;}
+.glass-card .card-value{font-family:Manrope,sans-serif;font-size:1.24rem;font-weight:700;letter-spacing:-.04em;margin:12px 0;color:#e8f7e9;}
+.muted{color:#a0b3aa;font-size:.83rem;line-height:1.65;}
+.section-line{border-top:1px solid #294039;margin-top:22px;padding-top:13px;}
+.topic-card{min-height:155px;padding:22px 23px;border-radius:15px;background:#142729;border:1px solid #2b4540;}
+.topic-card .tag{color:#b6d9c4;font-size:.72rem;letter-spacing:.11em;font-weight:700;}
+.topic-card .title{font-size:1.08rem;font-weight:700;color:#eef5ef;margin:11px 0 6px;}
+.topic-card p{font-size:.87rem;color:#aec0b8;line-height:1.63;}
+.ribbon{display:inline-block;font-size:.72rem;letter-spacing:.08em;padding:6px 10px;border-radius:22px;background:#1c4137;border:1px solid #376f51;color:#cdeed4;font-weight:700;}
+.ribbon-demo{background:#342b21;border-color:#796749;color:#e7d4aa;}
+.score{font-family:Manrope,sans-serif;font-size:2.65rem;line-height:1.15;font-weight:800;color:#d7fae1;}
+.evidence-line{color:#abbcb3;font-size:.82rem;padding:.56rem 0;border-bottom:1px solid #233c37;}
+.highlight-text{color:#bbe8ce;}
+.hero-smallnote{font-size:.8rem;color:#8fa89d;margin-top:15px;}
+</style>
+<style>body{background:#0b1618;color:#eff5ef;font-family:Arial,sans-serif;margin:0}main{width:1200px;max-width:90vw;margin:35px auto}.preview-btn{display:inline-block;background:#b5e0c5;color:#142326;padding:18px 28px;margin-top:25px;border-radius:9px;font-weight:bold}.preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}</style></head><body><main><div class="portal-wordmark">◈ POINT <span>/ ORIGIN</span></div><div class="portal-hero">
+      <div class="portal-eyebrow">AN INDEPENDENT CONCEPT FOR UK REAL ASSETS, PARTNERSHIPS &amp; ENERGY TRANSITION</div>
+      <div class="hero-title">Turn relationship intelligence into <em>kinetic</em> opportunity.</div>
+      <div class="subhead">Source the right platform. Understand its strategic fit. Identify the most credible institutional partner. Convert market intelligence into disciplined commercial momentum.</div>
+      <div class="hero-footer">
+        <span>FOCUS<strong>UK REAL ASSETS</strong></span>
+        <span>MODEL<strong>HUMAN-LED ORIGINATION</strong></span>
+        <span>DESIGN<strong>ONE PARTNER / PLATFORM</strong></span>
+        <span>LENS<strong>CARBON &amp; CAPITAL</strong></span>
+      </div>
+    </div>
+    <div class="preview-btn">Enter the intelligence workspace &nbsp; →</div><div class="preview-grid"><div class="topic-card"><div class="tag">01 / SOURCE</div><div class="title">Origination before transaction</div><p>Identify asset-backed platforms and founder-led teams that could scale with long-term capital.</p></div><div class="topic-card"><div class="tag">02 / CONNECT</div><div class="title">Partnership intelligence</div><p>Prioritise complementary mandates, introduction pathways and the next human action.</p></div><div class="topic-card"><div class="tag">03 / CREATE VALUE</div><div class="title">The second-order lens</div><p>Test asset-level carbon and capital trade-offs with transparent, editable assumptions.</p></div></div></main></body></html>
